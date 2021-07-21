@@ -35,6 +35,7 @@ p {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 .profile-img.aos-init.aos-animate img {
     border-radius: 12px;
