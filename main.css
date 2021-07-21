@@ -209,7 +209,7 @@ li {
 /*   background: linear-gradient(to top, #38ffeb, #fd5757);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: #ffffff;
+  color: #fff;
   padding: 1rem;
   user-select: none;
 }
