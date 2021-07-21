@@ -35,6 +35,7 @@ p {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 /*End global*/
 
@@ -208,6 +209,7 @@ li {
   font-family: "The Historia Demo", "dush Horizon", sans-serif;
   padding: 1rem;
   user-select: none;
+  color: #fff;
 }
 
 .landing-text h6 {
