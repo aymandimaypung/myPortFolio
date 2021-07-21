@@ -35,7 +35,9 @@ p {
 
 img {
   width: 100%;
-  border-radius: 12px;
+}
+.profile-img.aos-init.aos-animate img {
+    border-radius: 12px;
 }
 /*End global*/
 
@@ -205,11 +207,12 @@ li {
 }
 
 .landing-text h1 {
+  color: white;
   font-size: 10rem;
   font-family: "The Historia Demo", "dush Horizon", sans-serif;
   padding: 1rem;
   user-select: none;
-  color: #fff;
+  
 }
 
 .landing-text h6 {
