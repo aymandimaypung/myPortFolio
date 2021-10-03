@@ -8,14 +8,14 @@
 html {
   font-size: 10px;
   font-family: "roboto", sans-serif;
-  color: #eee;
+  color: #333;
 }
 
 body {
   width: 100%;
   height: 100%;
-/*   background: url("images/sitebg.jpg") no-repeat center fixed; */
-  background-image: linear-gradient(87deg, #38ffeb, #4b0867);
+  background: url("images/desktop-banner.jpg") no-repeat center fixed;
+  /* background-image: linear-gradient(87deg, #2e3fd6, #0d0442); */
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@ img {
 
 .section-heading h1 {
   font-size: 3.5rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #7e8ce0;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -75,7 +75,7 @@ img {
   bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #7e8ce0;
 }
 
 .section-heading h1::before {
@@ -114,10 +114,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-/*   background-color: #16162d; */
-  background: linear-gradient(
-135deg
-, #38a1f3, rgb(87 242 253 / 99%));
+  background-color: #7e8ce0;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 750ms cubic-bezier(1, 0, 0, 1);
@@ -141,11 +138,25 @@ li {
   font-family: "The Historia Demo", sans-serif;
   font-size: 3.5rem;
   padding: 1rem;
+  position: relative;
+  
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #3883ff;
+.nav-link:hover:before,
+.nav-link:focus:before{
+  width: 80%;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -.5rem;
+  width: 0;
+  height: 4px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  transition: all 650ms ease;
 }
 
 .top-nav.open {
@@ -163,6 +174,9 @@ li {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  border: 1px solid #7e8ce0;
+  padding: 5px;
+  border-radius: 5px;
   z-index: 1500;
   transition: transform 650ms ease-out;
 }
@@ -172,10 +186,14 @@ li {
 }
 
 .bar {
-  background-color: #fff;
+  background-color: #7e8ce0;
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
+}
+
+.open .bar {
+  background-color: #fff;
 }
 
 .bar.half {
@@ -212,7 +230,7 @@ li {
 }
 
 .landing-text h1 {
-  color: white;
+  color: #7e8ce0;
   font-size: 10rem;
   font-family: "The Historia Demo", "dush Horizon", sans-serif;
 <<<<<<< HEAD
@@ -231,6 +249,9 @@ li {
 /*End header*/
 
 /*Start about*/
+.about {
+  background-color: #7e8ce0;
+}
 .about .container {
   display: flex;
   align-items: center;
@@ -252,6 +273,7 @@ li {
 .about-heading h6 {
   font-size: 2rem;
   font-weight: 300;
+  color: #fff;
 }
 
 .profile-img {
@@ -376,7 +398,7 @@ li {
 
 /*Start contact*/
 .contact {
-  background-color: #221e3f;
+  background-color: #f2f2f2;
 }
 
 form {
@@ -395,7 +417,7 @@ textarea {
   margin-bottom: 5px;
   border-radius: 0.5rem;
   border: none;
-  outline-color: #3883ff;
+  outline-color: #7e8ce0;
   position: relative;
 }
 
@@ -403,14 +425,14 @@ input[type="submit"] {
   width: initial;
   color: #eee;
   padding: 0.5rem 2rem;
-  background-color: #3883ff;
+  background-color: #7e8ce0;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: background-color 650ms;
 }
 
 input[type="submit"]:hover {
-  background-color: #246cbe;
+  background-color: #6775c5;
 }
 /*End contact*/
 
