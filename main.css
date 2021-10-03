@@ -307,11 +307,11 @@ li {
 }
 /*End about*/
 
-/*Start services*/
+/*Start Skills*/
 .my-skills {
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
 }
@@ -322,6 +322,8 @@ li {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  background-color: #7e8ce066;
+  border-radius: 10px;
 }
 
 .skill h1 {
@@ -331,11 +333,13 @@ li {
 }
 
 .icon-container {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   border: 3px solid #eee;
   background-color: transparent;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
   display: flex;
   transform: rotate(45deg);
 }
@@ -365,20 +369,11 @@ li {
   flex: 1;
 }
 
-.portfolio-description {
-}
 
 .portfolio-description h1 {
   font-size: 3rem;
   font-weight: 300;
   margin: 1rem 0;
-}
-
-.portfolio-description h6 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  opacity: 0.3;
 }
 
 .portfolio-description .cta {
@@ -398,7 +393,7 @@ li {
 
 /*Start contact*/
 .contact {
-  background-color: #f2f2f2;
+  background-color: #7e8ce066;
 }
 
 form {
@@ -414,7 +409,7 @@ input,
 textarea {
   width: 100%;
   padding: 0.8rem 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
   border: none;
   outline-color: #7e8ce0;
@@ -424,7 +419,7 @@ textarea {
 input[type="submit"] {
   width: initial;
   color: #eee;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2.5rem;
   background-color: #7e8ce0;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -440,9 +435,10 @@ input[type="submit"]:hover {
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #16162d;
-  padding: 2rem 0;
+  background-color: #323c72;
+  padding: 1.5rem 0;
   position: relative;
+  color: #fff;
 }
 
 .up {
@@ -458,7 +454,7 @@ input[type="submit"]:hover {
 }
 
 .up i {
-  color: #16162d;
+  color: #7e8ce0;
   font-size: 2rem;
   margin: auto;
 }
@@ -485,7 +481,7 @@ input[type="submit"]:hover {
 /*Start media queries*/
 @media screen and (max-width: 768px) {
   body {
-    background: url("images/sitebg2.jpg") no-repeat center fixed;
+    background: url("images/mobile-banner.jpg") no-repeat center fixed;
     background-size: cover;
   }
 
@@ -545,6 +541,10 @@ input[type="submit"]:hover {
     right: 1.5rem;
     height: 2.5rem;
     width: 3.5rem;
+  }
+
+  .bar {
+    height: 2px;
   }
 
   .landing-text h1 {
